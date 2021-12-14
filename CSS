@@ -12,15 +12,15 @@ html.no-sidebar tw-sidebar {
 
 
 tw-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 10em; /* padding-right of the tw-story element. */
-  max-height: 100%;
-  margin-top: 5%; /* padding-top of the tw-story element. */
-  padding: 0 0.5em 0.5em 0.5em;
-  text-align: left;
-  background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 1.5em;
+    width: calc(20% - 1.5em);
+    max-height: 100%;
+    margin-top: 5%;
+    padding: 0 0.5em 0.5em 0.5em;
+    text-align: left;
+    background-color: transparent;
 }
 tw-icon {
   text-align: center;
