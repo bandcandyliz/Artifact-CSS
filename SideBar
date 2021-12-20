@@ -1,0 +1,39 @@
+(prepend:?SideBar)(icon-fullscreen:)\
+(append: ?SideBar)[\
+<font size="4">Name: <font color="Indianred"><b>$name</b></font>
+Age: <font color="Indianred"><b>24</b></font>
+Race: <font color="Indianred"><b>$playerRace</b></font>
+Gender: <font color="Indianred"><b>(if: $playerGender is 0) [Male](if: $playerGender is 1) [Female]</b></font>
+Hair Color: <font color="Indianred"><b>(if: $playerHairColor is 1) [Black](if: $playerHairColor is 2) [Brown](if: $playerHairColor is 3) [Red](if: $playerHairColor is 4) [Blonde](if: $playerHairColor is 5) [Platinum]</font></b>
+Eye Color: <font color="Indianred"><b>(if: $playerEyeColor is 1) [Brown](if: $playerEyeColor is 2) [Blue](if: $playerEyeColor is 3) [Green](if: $playerEyeColor is 4) [Hazel](if: $playerEyeColor is 5) [Red]</font></b>
+Cock Size: <font color="Indianred"><b>(if: $playerDickSize>1)[$playerDickSize</font></b> inches]</font></b>(if: $playerDickSize<=1)[(t8n: "shudder")+(transition-time: 0.5s)[<b><font color="indianred">$playerDickSize</font></b> inches]]
+Cock Girth: <font color="Indianred"><b>$playerGirth</font></b> inches
+Suspicion: (if: $playersus>=90)[(t8n: "shudder")+(transition-time: 0.5s)[<font color="Indianred"><b>$playersus</font></b>/100]](if: $playersus<90)[<font color="Indianred"><b>$playersus</font></b>/100]
+Time: <font color="Indianred"><b>(if: $time is 0)[Early AM](if: $time is 1)[Morning](if: $time is 2)[Noon](if: $time is 3)[Afternoon](if: $time is 4)[Evening](if: $time > 4)[Night]</font></b>
+(if: $time >=5)[(t8n: "shudder")+(transition-time: 0.5s)[<font color="beige" size="3">No time left to make actions.
+Try sleeping!</font>]
+
+(if: $playersus < 100)[ [[Fast travel to your bedroom ->
+Your bedroom]] ]]
+
+
+
+
+
+
+
+
+<!--Easy line breaks-->
+
+
+
+
+
+
+
+
+
+<b><font size="3"> Slot A: <font size="4">[Save]<save1| | [Load]<restore1| (click: ?save1)[Done!(savegame: "A")] (click: ?restore1)[Done!(loadgame: "A")]
+<font size="3"> Slot B: <font size="4">[Save]<save2| | [Load]<restore2| (click: ?save2)[Done!(savegame: "B")] (click: ?restore2)[Done!(loadgame: "B")]
+<font size="3"> Slot C: <font size="4">[Save]<save3| | [Load]<restore3| (click: ?save3)[Done!(savegame: "C")] (click: ?restore3)[Done!(loadgame: "C")]</font></b>
+]
